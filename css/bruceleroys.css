@@ -1,0 +1,31 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #000;
+}
+
+.has-text-primary {
+    color: #fff !important;
+}
+
+a, .has-text-info, .has-text-link, .has-text-success {
+    color: #e7af29 !important;
+}
+
+/*
+ * Custom properties
+ */
+
+body > section.hero {
+    background-image: url("../img/bg-bruce-leroys-diogo-marcelo.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+h1.title img {
+    width: 100%;
+    max-width: 300px;
+}
+
+#spotify > img {
+    max-width: 200px;
+}
