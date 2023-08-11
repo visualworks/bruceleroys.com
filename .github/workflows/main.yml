@@ -9,6 +9,7 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+jobs:
   build-deploy:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master'
@@ -20,5 +21,4 @@ on:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_S3_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_S3_SECRET_ACCESS_KEY }}
         AWS_REGION: ${{ secrets.AWS_S3_REGION }}
-        SOURCE_DIR: 'dist'
-
+        SOURCE_DIR: './'
